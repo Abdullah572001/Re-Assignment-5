@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Page</title>
+
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- tailwind and daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="font-lexend">
+    <header class="sticky top-0 z-10 bg-transparent backdrop-blur-sm">
+      <!-- navbar -->
+      <section class="bg-[#F9F7F3] pb-4">
+        <nav class="max-w-7xl mx-auto py-6">
+          <div class="navbar">
+            <div class="navbar-start">
+              <button
+                id="home-btn"
+                class="btn px-8 py-6 rounded-lg bg-primary font-semibold text-xl"
+              >
+                Home
+              </button>
+            </div>
+
+            <div class="navbar-center">
+              <a class="flex items-center justify-center gap-4 text-xl">
+                <img src="./assets/logo.png" alt="" />
+                <p class="text-xl font-semibold hidden md:block">
+                  Donate Bangladesh
+                </p>
+              </a>
+            </div>
+
+            <div class="navbar-end">
+              <div class="flex justify-center items-center gap-3">
+                <img src="./assets/coin.png" alt="" />
+                <p class="text-gray-500 font-medium text-xl">
+                  <span id="balance">10000</span>
+                  <span>BDT</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <!-- header btn -->
+    </header>
+
+    <main class="max-w-7xl mx-auto">
+
+        <h2 class="text-5xl font-bold my-10">Important FAQ</h2>
+
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title font-semibold">
+          How do I create an account?
+        </div>
+        <div class="collapse-content text-sm">
+          Click the "Sign Up" button in the top right corner and follow the
+          registration process.
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold">
+          I forgot my password. What should I do?
+        </div>
+        <div class="collapse-content text-sm">
+          Click on "Forgot Password" on the login page and follow the
+          instructions sent to your email.
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold">
+          How do I update my profile information?
+        </div>
+        <div class="collapse-content text-sm">
+          Go to "My Account" settings and select "Edit Profile" to make changes.
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/faq.js"></script>
+  </body>
+</html>

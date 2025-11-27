@@ -160,4 +160,13 @@ document.getElementById('q-donation-btn').addEventListener('click', function(e){
 
     // show modal
     my_modal_1.showModal()
+    // Clear the input field after donation
+    document.getElementById('q-input').value = '';
 })
+
+
+
+// home to blog page
+document.getElementById('blog-btn').addEventListener('click', function(){
+    window.location.href = 'faq.html';
+});
