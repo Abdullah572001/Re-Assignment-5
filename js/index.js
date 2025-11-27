@@ -123,7 +123,7 @@ document.getElementById('f-donate-btn').addEventListener('click', function(e){
 
 
 // Quota Movement Donation
-document.getElementById('q-donation-btn').addEventListener('click', function(e){
+document.getElementById('q-donation-btn').addEventListener('click', function(e){git 
     const qInputValue = document.getElementById('q-input').value;
 
     // Show an alert message when the button is clicked
